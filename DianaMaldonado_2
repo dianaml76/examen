@@ -3,3 +3,10 @@ for (let i = 360; i < 660; i -= 20) {
   console.log(i);
   break;
 }
+ // Con ciclo FOR no me sale, lo resuelvo con un DO WHILE
+ 
+ let i = 680;
+ do {
+  i = i - 20;
+  console.log(i);
+} while (i > 360);
