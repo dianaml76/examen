@@ -1,8 +1,11 @@
 horasOr = prompt("Ingrese horas laborales");
 horasEx = prompt("Ingrese horas extra");
-
+if(horasOr <= 40){
 sueldo1 = horasOr * 265.00;
-sueldo2 = horasEx * 350.00;
-
 alert("El total a pagar por horas laborales normal " + horasOr + " es de " + sueldo1);
+} if(horasEx > 40) {
+sueldo2 = horasEx * 350.00;
 alert("El total a pagar por horas extra " + horasEx + " es de " + sueldo2);
+} else {
+  alert("Horas no validas");
+}
