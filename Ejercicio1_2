@@ -1,0 +1,15 @@
+let num = 100;
+let arr = new Array(num);
+for (let i = 0; i < num; i++) {
+    arr[i] = i + 1;
+}
+if(num % 2 === 0){
+document.write("Es par");
+} else {
+document.write("Es impar")
+}
+
+arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+const loteria = arr.slice(0, 5);
+
+document.write(loteria);
