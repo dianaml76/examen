@@ -1,0 +1,7 @@
+let texto = "Hola como estas";
+let contar = 0;
+let start = 0;
+while ((start = texto.indexOf("o", start) + 1) > 0) {
+    contar++;
+}
+console.log(contar);
