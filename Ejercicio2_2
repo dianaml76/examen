@@ -1,0 +1,18 @@
+let num =parseInt(prompt("Ingrese un numero"));
+if(num % 2 === 0){
+console.log("El numero " + num + " es multiplo de de 2");
+} if(num % 3 === 0){
+  console.log("El numero " + num + " es multiplo de de 3");
+} if(num % 5 === 0){
+console.log("El numero " + num + " es multiplo de 5");
+} if (num % 6 === 0){
+console.log("El numero " + num + " es multiplo de 6");
+} if (num % 7 === 0){
+console.log("El numero " + num + " es multiplo de 7");
+}if (num % 8 === 0){
+console.log("El numero " + num + " es multiplo de 8");
+}if (num % 9 === 0){
+console.log("El numero " + num + " es multiplo de 9");
+}if (num % 10 === 0){
+console.log("El numero " + num + " es multiplo de 10");
+}
