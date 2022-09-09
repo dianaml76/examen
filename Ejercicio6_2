@@ -1,4 +1,4 @@
-let str = "hola mundo.mundo";
+let str = "hola.mundo";
 console.log(str);
     
 let str_array = str.split('.');
