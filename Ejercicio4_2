@@ -1,0 +1,5 @@
+let array1 = [23,5,34,56,98,"cadena",7];
+console.log('array1:', array1);
+
+let reversed = array1.reverse();
+console.log('reversed:', reversed);
