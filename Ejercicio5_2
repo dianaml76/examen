@@ -1,0 +1,70 @@
+class Persona{
+constructor(nombre, apellido, edad){
+this.nombre = nombre;
+this.apellido = apellido;
+this.edad = edad;
+}
+informacion(){
+console.log("Nombre: "+this.nombre+" Apellido: "+this.apellido+" Edad: "+this.edad);
+}
+}
+
+let empleado = new Persona("Carlos", "Mera", 45);
+console.log(empleado.informacion());
+
+class jugadores extends Persona{
+constructor(nombre, apellido, edad, propiedadPosicion){
+super(nombre, apellido, edad)
+this.propiedadPosicion= propiedadPosicion;
+}
+informacionTotal(){
+console.log("Nombre: "+this.nombre+" Apellido: "+this.apellido+" Edad: "+this.edad+" Posicion: "+ this.propiedadPosicion);
+let jugadoresOf = new jugador("Carlos", "Vera", "34", "Si");
+console.log(jugadoresOf.informacionTotal());
+}
+class Entrenador extends Persona{
+constructor(nombre, apellido, edad, propiedadPosicion, años, idFederacion){
+super(nombre, apellido, edad)
+this.años = años;
+this.idFederacion = idFederacion
+}
+informacionTotal2(){
+console.log("Nombre: "+this.nombre+" Apellido: "+this.apellido+" Edad: "+this.edad+" Posicion: "+ this.propiedadPosicion + " Experiencia " + this.años + " Con ID " + this.idFederacion);
+let jugadores2 = new Entrenador("Carlos", "Vera", "34", "Si", "10","987");
+console.log(Entrenador.informacionTotal2());
+}
+class Equipo extends Entrenador{
+constructor(nombre, apellido, edad, propiedadPosicion, años, idFederacion, equipos){
+super(nombre, apellido, edad, propiedadPosicion, años, idFederacion)
+this.equipos = equipos;
+}
+
+informacionTotal3(){
+console.log("Nombre: "+this.nombre+" Apellido: "+this.apellido+" Edad: "+this.edad+" Posicion: "+ this.propiedadPosicion + " Experiencia " + this.años + " Con ID " + this.idFederacion + " Equipo: "+this.equipos);
+let jugadores3 = new Entrenador("Carlos", "Vera", "34", "Si", "10","987", "Hornet");
+console.log(jugadores3.informacionTotal3());
+}
+
+class Equipo extends Entrenador{
+constructor(nombre, apellido, edad, propiedadPosicion, años, idFederacion, equipos){
+super(nombre, apellido, edad, propiedadPosicion, años, idFederacion)
+this.equipos = equipos;
+}
+
+informacionTotal3(){
+console.log("Nombre: "+this.nombre+" Apellido: "+this.apellido+" Edad: "+this.edad+" Posicion: "+ this.propiedadPosicion + " Experiencia " + this.años + " Con ID " + this.idFederacion + " Equipo: "+this.equipos);
+let jugadores3 = new Entrenador("Carlos", "Vera", "34", "Si", "10","987", "Hornet");
+console.log(jugadores3.informacionTotal3());
+}
+
+class Equipo extends Jugadores{
+constructor(nombre, apellido, edad, propiedadPosicion, años, idFederacion, equipos, jugador){
+super(nombre, apellido, edad, propiedadPosicion, años, idFederacion, equipos)
+this.jugador = jugador;
+}
+
+informacionTotal4(){
+console.log("Nombre: "+this.nombre+" Apellido: "+this.apellido+" Edad: "+this.edad+" Posicion: "+ this.propiedadPosicion + " Experiencia " + this.años + " Con ID " + this.idFederacion + " Equipo: "+this.equipos+" Jugador "+this.jugador);
+let jugadores4 = new Equipo("Carlos", "Vera", "34", "Si", "10","987", "Hornet", "Bale");
+console.log(jugadores4.informacionTotal4());
+}
